@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Anastasia Shkyrta</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light container mt-3">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse shadow-none"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item d-flex">
+
+              <!-- Search -->
+              <div class="search me-5">     
+                 <div class="box">
+                    <input type="text" class="input" name="txt" >
+                    <img src="./img/search.svg" alt="search" class="icon">
+                 </div>
+              <!-- Search -->
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="#">
+                <img role="button" src="./img/cart.svg" alt="cart" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn shadow-none"
+                data-bs-toggle="modal"
+                id="alt"
+                href="#"
+                >Sign up</a
+              >
+            </li>
+            <li class="nav-item btn">
+              <button
+                type="button"
+                class="btn colored_btn shadow-none"
+                data-bs-toggle="modal"
+                data-bs-target="#modal_window"
+                
+              >
+                Sign in
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row align-items-center">
+                  <div class="col-6">
+                    <img src="./img/main-pic.png"  alt="plant">
+                  </div>
+    
+                  <div class="col-6 text ">
+                    <h1>Kembang Flower Mantap</h1>
+                    <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                      been the industry's standard dummy text ever since the 1500s, </p>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="carousel-item">
+                <div class="row align-items-center">
+                  <div class="col-6">
+                    <img src="./img/car1.jpg" style="width: 558px;
+                    height: 740px;"  alt="plant">
+                  </div>
+    
+                  <div class="col-6 text">
+                    <h1>Kembang Flower Mantap</h1>
+                    <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                      been the industry's standard dummy text ever since the 1500s, </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row align-items-center">
+                  <div class="col-6">
+                    <img src="./img/car2.jpg" style="width: 558px;
+                    height: 740px;" alt="plant">
+                  </div>
+    
+                  <div class="col-6 text">
+                    <h1>Kembang Flower Mantap</h1>
+                    <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                      been the industry's standard dummy text ever since the 1500s, </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="arrows_block">
+              <button class=" btn colored_btn  shadow-none prev_btn" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <div class="d-flex align-items-center justify-content-start mb-3">
+                  <div class="arrow " id="ar_alt">
+                      <img src="./img/arrowL.svg" alt="">
+                  </div>
+                  <div class="previous ms-3 " style="color: #999999;">Previous</div>
+                </div>
+                <h3 style="color: #156963;">Kaktus Plant</h3>
+              </button>
+
+              <button class=" btn colored_btn shadow-none type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <div class="d-flex align-items-center justify-content-start  mb-3">
+                  <div class="next me-3 ">Next</div>
+                  <div class="arrow">
+                      <img src="./img/arrowR.svg" alt="">
+                  </div>
+                </div>
+                <h3>Rahasia Plant</h3>
+              </button>
+            </div>
+          </div>
+        </header>
+
+          <!--The first row of cards -->
+
+          <section>
+
+            <div class="row d-flex ">
+                <div class="col-12 col-md-6 col-xl-3 ">
+                  <div class="card">
+                    <div class="icon_and_tittle d-flex  ">
+                      <img src="./img/icon1.svg" alt="icon">
+                      <h4>Fast<br>
+                        Delivery</h4>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                      industry's standard </p>
+                  </div>
+                </div>
+        
+                <div class="col-12 col-md-6 col-xl-3">
+                  <div class="card">
+                    <div class="icon_and_tittle d-flex ">
+                      <img src="./img/icon2.svg" alt="icon">
+                      <h4>Great Customer<br> Service </h4>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                      industry's standard </p>
+                  </div>
+                </div>
+        
+                <div class="col-12 col-md-6 col-xl-3">
+                  <div class="card">
+                    <div class="icon_and_tittle d-flex ">
+                      <img src="./img/icon3.svg" alt="icon">
+                      <h4>Original<br> Plants</h4>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                      industry's standard </p>
+                  </div>
+                </div>
+        
+                <div class="col-12 col-md-6 col-xl-3">
+                  <div class="card">
+                    <div class="icon_and_tittle d-flex ">
+                      <img src="./img/icon4.svg" alt="icon">
+                      <h4>Affordable<br> Price</h4>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                      industry's standard </p>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <!--The second row of cards -->
+
+          <div class="block_with_gallery ">
+            <div class="part_up d-flex flex-row justify-content-between">
+              <h4 >Featured Plants</h4>
+              <div class="dropdown">
+                <button class="btn shadow-none drop_btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <span>Cheaper First</span>
+                  <img src="./img/arrowdown.svg" alt="">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+      
+      
+            <div class="gallery d-flex justify-content-between mt-3 flex-md-frap">
+              <div class="cart">
+                <img src="./img/gallery1.png" alt="plant">
+                <div class="tittle mt-4">
+                  <h5>Kaktus Plants</h5>
+                  <p>IDR 85.000</p>
+                </div>
+              </div>
+              <div class="cart">
+                <img src="./img/gallery2.png" alt="plant">
+                <div class="tittle mt-4">
+                  <h5>Landak Plants</h5>
+                  <p>IDR 105.000</p>
+                </div>
+              </div>
+              <div class="cart">
+                <img src="./img/gallery3.png" alt="plant">
+                <div class="tittle mt-4 ">
+                  <h5>Kecubung Plants</h5>
+                  <p>IDR 85.000</p>
+                </div>
+              </div>
+              <div class="cart">
+                <img src="./img/gallery4.png" alt="plant">
+                <div class="tittle mt-4">
+                  <h5>Kecubung Plants</h5>
+                  <p>IDR 85.000</p>
+                </div>
+              </div>
+              <div class="cart">
+                <img src="./img/gallery5.png" alt="plant">
+                <div class="tittle mt-4">
+                  <h5>Kecubung Plants</h5>
+                  <p>IDR 85.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <main>
+            <div class="content  d-flex justify-content-between ">
+              <div class="text col-7 ms-5">
+                <h4  class="mb-3 ">Buy more plants, it helps you to be relaxed </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida gravida aliquam. Pellentesque et
+                  lobortis nisl. Sed et mauris justo. Nulla eu enim non mauris maximus dignissim. Maecenas vitae eros sapien.
+                  Quisque pellentesque tempus dignissim.</p>
+                <img src="./img/pic1.png" alt="plant">
+              </div>
+              <div class="picture col-5 ">
+                <img src="./img/pic2.png" alt="plant">
+              </div>
+            </div>
+          </main>
+
+          <!-- background block -->
+
+          <div class="bg_block d-flex align-items-center justify-content-between ">
+              <div class="text col-6 offset-1">
+                <h4>Get your favourites plant on our shop now</h4>
+                <button class="btn colored_btn shadow-none " href="#">Visit Shop</button>
+              </div>
+              <div class="pic col-6 ">
+                <img src="./img/bg.png" alt="plant">
+              </div>
+          </div>
+
+
+          <!-- Footer -->
+
+          <footer class="d-flex ">
+            <div class="col-4 part1 mt-5 ms-5">
+              <h3>PLANTKU</h3>
+              <h4 class="mt-4">Plantku House</h4>
+              <p >Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok, Kota Yogyakarta, Daerah Istimewa Yogyakarta
+                55282</p>
+            </div>
+            <div class="col-2 mt-5">
+              <h4>Perusahaan</h4>
+              <h5 class="mt-3 mb-3">Tentang Kami</h5>
+              <h5 >Hubungi Kami</h5>
+            </div>
+            <div class="col-2 mt-5">
+              <h4>Produk</h4>
+              <h5 class=" mt-3 mb-3">Tanaman</h5>
+              <h5 >Tanaman Lain</h5>
+            </div>
+            <div class="col-3 d-flex flex-column mt-5 ">
+              <h4>Berlangganan Email Kami</h4>
+              <input type="text" placeholder="Masukan Alamat Email">
+              <button class=" btn shadow-none colored_btn p-0 submit">Submit</button>
+            </div>
+          </footer>
+
+    </div>
+
+    <!-- Modal Window -->
+    <div class="modal  fade" id="modal_window" tabindex="-1" aria-labelledby="modal_window" aria-hidden="true">
+      <div class="modal-dialog modal_sign_in modal-dialog-centered">
+        <div class="modal-content ">
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body p-0">
+            <div class="row align-items-center">
+              <div class="col-6 d-none d-md-block">
+                <img class="pic" src="./img/main-pic.png" alt="">
+              </div>
+              <div class="col-md-6 col-12 text-center px-3 px-md-5">
+  
+                <h4>Sign in</h4>
+                <div class="form mt-5">
+                 
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="Input" placeholder="name@example.com" class="shadow-none">
+                    <label for="Input">Email</label>
+                    </div>
+                 
+                 
+                <div class="form-floating margin_form">
+                  <input type="password" class="form-control" id="Password" placeholder="Password">
+                 <label for="Password">Password</label>
+                </div>
+
+                  <div class="margin_form alt">
+                    <button class="btn colored_btn shadow-none">Sign in</button>
+                  </div>
+  
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

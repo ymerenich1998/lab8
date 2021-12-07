@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+$default_background_color: #fff;
+$base_background_color: #000000;
+$main_color: #156963;
+$hovered_btn: #0d403c;
+$bg_color: #f3f4f6;
+//fonts
+$main_font: 'Montserrat', sans-serif;
+
+@mixin bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: $main_font;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 2;
+}
+#alt {
+  box-shadow: none;
+  color: $main_color;
+  padding: 8px 32px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+.colored_btn {
+  background-color: $main_color;
+  border-radius: 0;
+  color: $default_background_color;
+  padding: 8px 32px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  &:hover {
+    background-color: $hovered_btn;
+    color: $default_background_color;
+  }
+}
+//search
+.box {
+  position: relative;
+  img {
+    margin-bottom: 3px;
+  }
+}
+
+.input {
+  width: 30px;
+  border: 1px solid transparent;
+  margin-right: -30px;
+  width: 20px;
+  height: 25px;
+  background: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+.box:hover input {
+  width: 250px;
+  background: transparent;
+  border-bottom: 1px solid $base_background_color;
+}
+
+//carousel
+
+.carousel {
+  position: relative;
+  .carousel-item {
+    min-height: 700px;
+    .text {
+      width: 563px;
+      h1 {
+        font-weight: 500;
+        font-size: 68px;
+        line-height: 83px;
+        color: $main_color;
+      }
+      p {
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
+  .arrows_block {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    button {
+      width: 271px;
+      height: 160px;
+      .previous,
+      .next {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        opacity: 70%;
+      }
+    }
+    .prev_btn {
+      background-color: transparent;
+    }
+    .arrow {
+      width: 21px;
+      height: 19px;
+    }
+    #ar_alt {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+//Cards section
+.card {
+  width: 100%;
+  margin: 100px 0px;
+  height: 155px;
+  padding: 22px 18px;
+  .icon_and_tittle {
+    margin-bottom: 15px;
+    h4 {
+      margin-left: 18px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: $main_color;
+    }
+  }
+  p {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+
+.part_up {
+  h4 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .drop_btn {
+    border-radius: 0;
+    border: 1px solid #e0e0e0;
+    width: 130px;
+    height: 31px;
+
+    span {
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
+}
+
+.cart {
+  min-height: 240px;
+  margin-bottom: 80px;
+  img {
+    width: 240px;
+    height: 240px;
+    background-color: $bg_color;
+  }
+  h5 {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+  }
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+//Main content
+
+.content {
+  min-height: 700px;
+  .text {
+    width: 522px;
+    h4 {
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 56px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 90px;
+    }
+    img {
+      width: 568px;
+      height: 250px;
+    }
+  }
+}
+
+//background block
+
+.bg_block {
+  min-height: 360px;
+  background-color: $bg_color;
+  .pic {
+    width: 480px;
+    height: 360px;
+  }
+  .text {
+    width: 585px;
+    h4 {
+      font-weight: bold;
+      font-size: 40px;
+    }
+    button {
+      width: 152px;
+      height: 40px;
+      margin-top: 32px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}
+
+//Footer
+footer {
+  min-height: 270px;
+  margin-top: 80px;
+  border-top: 1px solid #156963;
+  p {
+    width: 282px;
+    font-weight: normal;
+    font-size: 13px;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: $main_color;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  h5 {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .submit {
+    width: 51px;
+    height: 22px;
+    font-weight: 500;
+    font-size: 8px;
+  }
+
+  input {
+    margin: 15px 0;
+    padding: 8px 13px;
+    width: 234px;
+    height: 32px;
+    font-weight: normal;
+    font-size: 12px;
+    border: 1px solid #f2f2f2;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+//Modal Window
+
+.modal {
+  &_sign_in {
+    width: 100%;
+    max-width: 700px;
+
+    & .modal-content {
+      position: relative;
+      border-radius: 0;
+      border: none;
+      min-height: 500px;
+      background: url(../img/patern.png), $default_background_color;
+      @include bg;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+      .btn-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 2;
+      }
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      color: $main_color;
+    }
+  }
+
+  .margin_form {
+    margin-bottom: 20px;
+
+    &.alt {
+      margin-top: 35px;
+    }
+  }
+
+  .pic {
+    object-fit: cover;
+    height: 500px;
+  }
+
+  .form_control {
+    max-height: 50px;
+    border-radius: 0;
+    border: 1px solid #c4c4c4;
+    padding: 15px 15px 10px;
+  }
+  input {
+    max-height: 40px;
+    border-radius: 0;
+  }
+  label {
+    font-size: 12px;
+    padding: 12px 15px;
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  ::placeholder {
+    color: $bg_color;
+    font-size: 10px;
+  }
+  .colored_btn {
+    width: 100%;
+  }
+}
